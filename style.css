@@ -1,3 +1,12 @@
+:root {
+    --accent1: #5d5c61;
+    --transparent: #5d5c6180;
+}
+
+nav{
+    background-color: #5d5c61;
+}
+
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -5,7 +14,7 @@ body {
 #intro-section {
     align-items: center;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .pfp {
@@ -18,9 +27,8 @@ body {
     object-fit: cover;
     /* border-radius: 50%; */
     border-radius: 30% 70% 60% 40% / 40% 60% 40% 60%; /* asymmetric crop */
-    height: 15rem;
-    width: 15rem;
-    padding-right: 2rem;
+    height: 25rem;
+    width: 25rem;
 }
 
 .intro-text {
@@ -31,11 +39,24 @@ body {
 
 .banner {
     background-image: url("images/teaching.jpeg");
-    min-height: 15rem;
+    min-height: 30rem;
   
     /* parallax effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+
+    position: relative;
+}
+
+.teaching-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--transparent);
+    color: white;
+    padding:20px;
+    width: 20%;
+    max-height: 30rem;
+}
