@@ -29,7 +29,6 @@ body {
     border-radius: 30% 70% 60% 40% / 40% 60% 40% 60%; /* asymmetric crop */
     height: 25rem;
     width: 25rem;
-    padding-right: 2rem;
 }
 
 .intro-text {
@@ -58,6 +57,6 @@ body {
     background-color: var(--transparent);
     color: white;
     padding:20px;
-    min-width: 20%;
+    max-width: 20%;
     max-height: 25rem;
 }
