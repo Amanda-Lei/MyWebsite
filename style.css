@@ -1,12 +1,3 @@
-:root {
-    --accent1: #5d5c61;
-    --transparent: #5d5c6180;
-}
-
-nav{
-    background-color: #5d5c61;
-}
-
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -14,7 +5,7 @@ body {
 #intro-section {
     align-items: center;
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .pfp {
@@ -27,8 +18,9 @@ body {
     object-fit: cover;
     /* border-radius: 50%; */
     border-radius: 30% 70% 60% 40% / 40% 60% 40% 60%; /* asymmetric crop */
-    height: 25rem;
-    width: 25rem;
+    height: 15rem;
+    width: 15rem;
+    padding-right: 2rem;
 }
 
 .intro-text {
@@ -46,9 +38,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     position: relative;
-}
+  }
 
 .teaching-text{
     position: absolute;
