@@ -2,6 +2,12 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+#intro-section {
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .pfp {
     display: flex;
     align-items: center;
@@ -11,12 +17,14 @@ body {
 .profile-img {
     object-fit: cover;
     /* border-radius: 50%; */
-    border-radius: 30% 70% 50% 50% / 40% 60% 40% 60%; /* asymmetric crop */
-    height: 100px;
-    width: 100px;
+    border-radius: 30% 70% 60% 40% / 40% 60% 40% 60%; /* asymmetric crop */
+    height: 15rem;
+    width: 15rem;
+    padding-right: 2rem;
 }
 
 .intro-text {
     max-width: 400px;
+    align-items: center;
     text-align: left;
 }
