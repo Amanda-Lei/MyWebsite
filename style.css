@@ -11,7 +11,7 @@ body {
 .pfp {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 
 .profile-img {
@@ -28,3 +28,14 @@ body {
     align-items: center;
     text-align: left;
 }
+
+.banner {
+    background-image: url("images/teaching.jpeg");
+    min-height: 15rem;
+  
+    /* parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
