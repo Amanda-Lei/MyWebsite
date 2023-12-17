@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -27,6 +29,7 @@ body {
     max-width: 400px;
     align-items: center;
     text-align: left;
+    justify-content: center;
 }
 
 .banner {
@@ -49,6 +52,6 @@ body {
     background-color: var(--transparent);
     color: white;
     padding:20px;
-    width: 20%;
-    max-height: 30rem;
+    min-width: 20%;
+    max-height: 25rem;
 }
