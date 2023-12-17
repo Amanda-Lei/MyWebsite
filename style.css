@@ -1,4 +1,11 @@
+:root {
+    --accent1: #5d5c61;
+    --transparent: #5d5c6165;
+}
 
+nav {
+    background-color: var(--accent1);
+}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -20,8 +27,8 @@ body {
     object-fit: cover;
     /* border-radius: 50%; */
     border-radius: 30% 70% 60% 40% / 40% 60% 40% 60%; /* asymmetric crop */
-    height: 15rem;
-    width: 15rem;
+    height: 25rem;
+    width: 25rem;
     padding-right: 2rem;
 }
 
@@ -29,7 +36,6 @@ body {
     max-width: 400px;
     align-items: center;
     text-align: left;
-    justify-content: center;
 }
 
 .banner {
