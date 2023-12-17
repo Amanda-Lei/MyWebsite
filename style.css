@@ -1,0 +1,26 @@
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #5d5c61;
+    margin: -8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    padding-right: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
