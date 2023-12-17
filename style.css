@@ -5,15 +5,18 @@ body {
 .pfp {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 
 .profile-img {
-    border-radius: 50%;
-    margin-right: 20px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border-radius: 30% 70% 50% 50% / 40% 60% 40% 60%; /* asymmetric crop */
+    height: 100px;
+    width: 100px;
 }
 
 .intro-text {
-    max-width: 400px; /* Adjust the maximum width of the text */
+    max-width: 400px;
     text-align: left;
 }
