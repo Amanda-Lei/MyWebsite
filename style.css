@@ -2,18 +2,18 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.intro-container {
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: left; /* Adjust text alignment as needed */
+.pfp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-img {
-border-radius: 50%;
-margin-right: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .intro-text {
-max-width: 400px; /* Adjust the maximum width of the text */
+    max-width: 400px; /* Adjust the maximum width of the text */
+    text-align: left;
 }
