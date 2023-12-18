@@ -64,3 +64,7 @@ body {
 .professional {
     margin: 5rem;
 }
+
+.job-title {
+    font-weight: bold;
+}
