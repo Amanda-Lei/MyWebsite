@@ -14,7 +14,7 @@ body {
 #intro-section {
     align-items: center;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .pfp {
@@ -50,7 +50,7 @@ body {
     position: relative;
   }
 
-.teaching-text{
+.teaching-text {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -59,4 +59,8 @@ body {
     padding:20px;
     max-width: 20%;
     max-height: 25rem;
+}
+
+.professional {
+    margin: 5rem;
 }
