@@ -61,10 +61,15 @@ body {
     max-height: 25rem;
 }
 
-.professional {
+#professional {
     margin: 5rem;
 }
 
 .job-title {
     font-weight: bold;
+}
+
+.box {
+    background-color: var(--accent1);
+    margin: 2rem;
 }
