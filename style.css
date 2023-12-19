@@ -71,7 +71,8 @@ body {
 
 .box {
     background-color: var(--accent1);
-    color:white;
+    color: white;
     margin: 0.5rem;
     padding: 1rem;
+    text-wrap: wrap;
 }
