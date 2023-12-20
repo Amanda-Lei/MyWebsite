@@ -65,15 +65,21 @@ body {
     max-height: 25rem;
 }
 
-#professional {
-    margin: 5rem;
-}
-
-.job-title {
-    font-weight: bold;
+.prof-section {
+    margin: 2rem;
+    text-align: center;
 }
 
 .card-body {
-    background-color: var(--accent1);
+    --bs-card-bg: var(--accent1);
     /* color: white; <-- applied in card class*/
+}
+
+.prof-content {
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.accordion-button {
+    font-size: 1.3rem;
 }
