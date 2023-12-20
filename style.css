@@ -65,19 +65,15 @@ body {
     max-height: 25rem;
 }
 
-.prof-section {
+.prof-section, .prof-content {
     margin: 2rem;
     text-align: center;
+    align-items: center;
 }
 
 .card-body {
-    --bs-card-bg: var(--accent1);
+    background-color: var(--accent1);
     /* color: white; <-- applied in card class*/
-}
-
-.prof-content {
-    margin-top: 2rem;
-    align-items: center;
 }
 
 .accordion-button {
