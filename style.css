@@ -17,6 +17,10 @@ body {
     padding-bottom: 3rem;
 }
 
+#intro-section h1{
+    padding-bottom: 0.5rem;
+}
+
 .pfp {
     display: flex;
     align-items: center;
@@ -69,10 +73,7 @@ body {
     font-weight: bold;
 }
 
-.box {
+.card-body {
     background-color: var(--accent1);
-    color: white;
-    margin: 0.5rem;
-    padding: 1rem;
-    text-wrap: wrap;
+    /* color: white; <-- applied in card class*/
 }
