@@ -89,7 +89,10 @@ body {
     color: var(--accent1);
 }
 
-.techshare-gallery {
-    text-align: center;
+.carousel-header {
+    display: flex;
     align-items: center;
+    /* text-align: right; "text-end" class*/
+    word-wrap: normal;
+    max-width: 200px;
 }

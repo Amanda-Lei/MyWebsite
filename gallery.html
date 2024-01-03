@@ -31,12 +31,12 @@
         <h1 class="gallery-title display-3" style="margin-top: 55px;">Gallery Portfolio</h1>
 
         <!-- Carousel -->
-        <div class="techshare-gallery container-fluid d-flex mt-4">
+        <div class="container-fluid d-flex mt-4">
             <div class="row">
-                <div class="card col-md-2" style="max-width:200px"><div class="card-body">
+                <div class="carousel-header col-md-2 text-end">
                     <h5>Techshare Project</h5>
-                </div></div>
-                <div id="demo" class="carousel slide col-md-10" data-bs-ride="carousel">
+                </div>
+                <div id="techshare-gallery" class="carousel carousel-dark slide col-md-8" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
@@ -93,13 +93,10 @@
                         </div>
 
                     </div>  
-                
-                    <!-- left and right buttons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                </div>
+                <div class="col-md-2">
+                    <button class="carousel-control-next" type="button" data-bs-target="#techshare-gallery" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
             </div>
