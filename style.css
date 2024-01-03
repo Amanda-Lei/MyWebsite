@@ -74,7 +74,6 @@ body {
 .card-group .card-body {
     background-color: var(--accent1);
     /* color: white; <-- applied in card class*/
-    word-wrap: normal;
 }
 
 .accordion-button {
@@ -88,4 +87,9 @@ body {
     text-align: center;
     padding: 4rem;
     color: var(--accent1);
-  }
+}
+
+.techshare-gallery {
+    text-align: center;
+    align-items: center;
+}
