@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // var carouselInner = document.querySelector('#techshare-gallery > .carousel-inner');
 // createCarousel(imgArray, carouselInner);
 
-var imgNames = ['a.png','gallery.png'];
+var imgNames = ['a.png','gallery.png','Screen Shot 2024-01-04 at 12.48.44 PM.png','Screen Shot 2024-01-04 at 12.49.41 PM.png','Screen Shot 2024-01-04 at 12.50.11 PM.png','Screen Shot 2024-01-04 at 12.50.32 PM.png','Screen Shot 2024-01-04 at 12.50.50 PM.png','Screen Shot 2024-01-04 at 12.52.21 PM.png','Screen Shot 2024-01-04 at 12.52.44 PM.png','Screen Shot 2024-01-04 at 12.53.51 PM.png','Screen Shot 2024-01-04 at 12.54.23 PM.png'];
 var folderName = 'techsharePosts';
 const imgArray = Array.from(imgNames).map(img => 'images/' + folderName + '/' + img);
 var carouselInner = document.querySelector('#techshare-gallery > .carousel-inner');
@@ -61,7 +61,7 @@ function createCarousel (imageArray, innerLocation) {
         // image
         var img = document.createElement('img');
         img.src = imageSrc;
-        img.classList.add('img-fluid');
+        img.classList.add('img-fluid','object-fit-contain');
 
         //nest classes
         card.appendChild(img);
