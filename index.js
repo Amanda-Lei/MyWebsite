@@ -1,15 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 //carousels
-var imgFolder = fetchImages(techsharePosts);
+var imgArray = fetchImages('techsharePosts');
 var carouselInner = document.querySelector('#techshare-gallery > .carousel-inner');
-createCarousel(imgFolder, carouselInner);
+createCarousel(imgArray, carouselInner);
 
-// var imgFolder = fetchImages(ajlPosts);
-// var carouselInner = document.querySelector('#ajl-gallery > .carousel-inner');
-// createCarousel(imgFolder, carouselInner);
 
 /* FUNCTIONS */
+
+//return array of all pngs in folder arg
 function fetchImages(folderName) {
     return fetch('images/' + folderName + '/')
         .then(response => response.text())
@@ -17,7 +16,7 @@ function fetchImages(folderName) {
             // Parse the HTML content to extract image file names
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(data, 'text/html');
-            const imageElements = htmlDoc.querySelectorAll('a[href$=".jpg"], a[href$=".png"], a[href$=".jpeg"], a[href$=".gif"]');
+            const imageElements = htmlDoc.querySelectorAll('a[href$=".png"]');
 
             // Create an array with image paths
             const imageArray = Array.from(imageElements).map(element => 'images/' + folderName + '/' + element.getAttribute('href'));
@@ -26,6 +25,7 @@ function fetchImages(folderName) {
         });
 }
 
+// create carousel of images in imageArray where each item can hold up to 4 images. carousel appended into innerLocation arg
 function createCarousel (imageArray, innerLocation) {
     var carouselItem;
     var r;
