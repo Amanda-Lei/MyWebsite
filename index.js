@@ -4,21 +4,38 @@ document.addEventListener('DOMContentLoaded', function () {
         'images/gallery.jpg',
         'images/gallery.jpg',
         'images/gallery.jpg',
+        'images/gallery.jpg',
+        'images/gallery.jpg',
         'images/gallery.jpg'
     ];
 
     var carouselInner = document.querySelector('#techshare-gallery > .carousel-inner');
     
-    var carouselItem = document.createElement('div');
-    carouselItem.classList.add('carousel-item', 'active');
-    var r = document.createElement('div').classList.add('row');
+    var carouselItem;
+    var r;
+    var imageCount = 0;
+    var rowCount = 0;
 
     // add each image TO a row in a carousel item
-    imageArray.forEach(function (imageSrc, index) {
+    imageArray.forEach(function (imageSrc) {
+
+        if (imageCount==0){
+            //new carousel item
+            carouselItem = document.createElement('div');
+            carouselItem.classList.add('carousel-item');
+            //means first row made so should be set active
+            if (rowCount==0){ carouselItem.classList.add('active'); }
+            //new row
+            r = document.createElement('div')
+            r.classList.add('row');
+            rowCount++;
+        }
         
         //create col div and card div
-        var column = document.createElement('div').classList.add('col-sm-3');
-        var card = document.createElement('div').classList.add('card');
+        var column = document.createElement('div')
+        column.classList.add('col-sm-3');
+        var card = document.createElement('div')
+        card.classList.add('card');
 
         // image
         var img = document.createElement('img');
@@ -29,6 +46,15 @@ document.addEventListener('DOMContentLoaded', function () {
         card.appendChild(img);
         column.appendChild(card);
         r.appendChild(column);
+
+        imageCount++;
+
+        if (imageCount == 4) { //row complete. append to carousel and reset image count
+            carouselItem.appendChild(r);
+            carouselInner.appendChild(carouselItem);
+            imageCount = 0;
+        }
+
     });
 
     carouselItem.appendChild(r);
