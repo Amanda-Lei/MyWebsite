@@ -100,5 +100,11 @@ body {
     }
 }
 
-.carousel-control-next { right: -4rem; }
-.carousel-control-prev { left: -4rem; }
+.carousel-control-next-icon {
+    position: relative;
+    right: -6rem;
+}
+.carousel-control-prev-icon {
+    position: relative;
+    left: -6rem;
+}
