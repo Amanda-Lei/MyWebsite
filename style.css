@@ -1,6 +1,7 @@
 :root {
     --accent1: #5d5c61;
     --transparent: #5d5c6165;
+    --accent2: /*#9593D9*/ #E39774;
 }
 
 nav {
@@ -9,6 +10,10 @@ nav {
 
 body {
     font-family: 'Arial', sans-serif;
+}
+
+span {
+    color: var(--accent2);
 }
 
 #intro-section {
@@ -31,8 +36,8 @@ body {
     object-fit: cover;
     /* border-radius: 50%; */
     border-radius: 30% 70% 60% 40% / 40% 60% 40% 60%; /* asymmetric crop */
-    height: 25rem;
     width: 25rem;
+    border: 8px solid var(--accent2);
 }
 
 .intro-text {
@@ -61,8 +66,7 @@ body {
     background-color: var(--transparent);
     color: white;
     padding:20px;
-    max-width: 20%;
-    max-height: 25rem;
+    max-width: 20rem;
 }
 
 .prof-section, .prof-content {
@@ -83,7 +87,7 @@ body {
 /* Gallery */
 
 .gallery-title {
-    background-color: yellow;
+    background-color: var(--accent2);
     text-align: center;
     padding: 4rem;
     color: var(--accent1);

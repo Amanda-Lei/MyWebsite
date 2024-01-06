@@ -5,10 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
 // var carouselInner = document.querySelector('#techshare-gallery > .carousel-inner');
 // createCarousel(imgArray, carouselInner);
 
-var imgNames = ['a.png','gallery.png','Screen Shot 2024-01-04 at 12.48.44 PM.png','Screen Shot 2024-01-04 at 12.49.41 PM.png','Screen Shot 2024-01-04 at 12.50.11 PM.png','Screen Shot 2024-01-04 at 12.50.32 PM.png','Screen Shot 2024-01-04 at 12.50.50 PM.png','Screen Shot 2024-01-04 at 12.52.21 PM.png','Screen Shot 2024-01-04 at 12.52.44 PM.png','Screen Shot 2024-01-04 at 12.53.51 PM.png','Screen Shot 2024-01-04 at 12.54.23 PM.png'];
+var imgNames = ['Screen Shot 2024-01-06 at 2.05.40 PM.png','gallery.png','Screen Shot 2024-01-04 at 12.52.44 PM.png','Screen Shot 2024-01-04 at 12.48.44 PM.png','Screen Shot 2024-01-04 at 12.49.41 PM.png','Screen Shot 2024-01-04 at 12.53.51 PM.png','Screen Shot 2024-01-04 at 12.50.32 PM.png','Screen Shot 2024-01-04 at 12.52.21 PM.png','Screen Shot 2024-01-06 at 2.04.54 PM.png','Screen Shot 2024-01-04 at 1.58.42 PM.png','Screen Shot 2024-01-04 at 12.50.50 PM.png','Screen Shot 2024-01-06 at 2.04.10 PM.png'];
 var folderName = 'techsharePosts';
-const imgArray = Array.from(imgNames).map(img => 'images/' + folderName + '/' + img);
+var imgArray = Array.from(imgNames).map(img => 'images/' + folderName + '/' + img);
 var carouselInner = document.querySelector('#techshare-gallery > .carousel-inner');
+createCarousel(imgArray, carouselInner);
+
+imgNames = ['Screen Shot 2024-01-06 at 1.46.38 PM.png','Screen Shot 2024-01-06 at 1.50.03 PM.png','Screen Shot 2024-01-06 at 1.45.14 PM.png','Screen Shot 2024-01-06 at 1.51.35 PM.png','Screen Shot 2024-01-06 at 1.47.16 PM.png','Screen Shot 2024-01-06 at 1.49.08 PM.png','Screen Shot 2024-01-06 at 1.46.17 PM.png','Screen Shot 2024-01-06 at 1.52.02 PM.png','Screen Shot 2024-01-06 at 1.52.52 PM.png','Screen Shot 2024-01-06 at 1.49.31 PM.png','Screen Shot 2024-01-06 at 1.48.45 PM.png','Screen Shot 2024-01-06 at 1.44.59 PM.png'];
+folderName = 'ajlPosts';
+imgArray = Array.from(imgNames).map(img => 'images/' + folderName + '/' + img);
+carouselInner = document.querySelector('#ajl-gallery > .carousel-inner');
 createCarousel(imgArray, carouselInner);
 
 /* FUNCTIONS */
@@ -54,7 +60,7 @@ function createCarousel (imageArray, innerLocation) {
         
         //create col div and card div
         var column = document.createElement('div')
-        column.classList.add('col-sm-3');
+        column.classList.add('col-3');
         var card = document.createElement('div')
         card.classList.add('card');
 
