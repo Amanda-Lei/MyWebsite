@@ -75,13 +75,23 @@ span {
     align-items: center;
 }
 
-.card-group .card-body {
-    background-color: var(--accent1);
-    /* color: white; <-- applied in card class*/
+.resume {
+    width: 90%;
+    height: 40rem;
+    margin: auto;
 }
 
-.accordion-button {
-    font-size: 1.3rem;
+#contacts {
+    background-color: #5d5c61 ;
+    color: #E39774;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-links {
+    color: #E39774;
+    font-weight: bold;
+    margin: 0 1rem;
 }
 
 /* Gallery */
