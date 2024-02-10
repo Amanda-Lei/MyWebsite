@@ -69,13 +69,13 @@ span {
     max-width: 20rem;
 }
 
-.prof-section, .prof-content {
+#prof-section, .prof-content {
     margin: 2rem;
     text-align: center;
     align-items: center;
 }
 
-.resume {
+resume {
     width: 90%;
     height: 40rem;
     margin: auto;
@@ -96,12 +96,12 @@ span {
 
 /* Gallery */
 
-.gallery-title {
+/* .gallery-title {
     background-color: var(--accent2);
     text-align: center;
     padding: 4rem;
     color: white;
-}
+} */
 
 .carousel-header {
     display: flex;
