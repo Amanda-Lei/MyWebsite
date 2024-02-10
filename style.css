@@ -12,6 +12,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+/* text accents */
 span {
     color: var(--accent2);
 }
@@ -69,7 +70,7 @@ span {
     max-width: 20rem;
 }
 
-#prof-section, .prof-content {
+#prof-section {
     margin: 2rem;
     text-align: center;
     align-items: center;
@@ -80,6 +81,8 @@ span {
     height: 40rem;
     margin: auto;
 }
+
+/* Contact */
 
 #contacts {
     background-color: #5d5c61 ;
@@ -98,7 +101,7 @@ span {
 
 #carousel-section{
     border-style: solid;
-    border-width: 1rem 0 1rem 0;
+    border-width: 1rem;
     border-color: var(--accent2);
 }
 
@@ -117,6 +120,7 @@ span {
     position: relative;
     right: -6rem;
 }
+
 .carousel-control-prev-icon {
     position: relative;
     left: -6rem;
