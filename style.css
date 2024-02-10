@@ -58,7 +58,14 @@ span {
     background-size: cover;
     
     position: relative;
-  }
+}
+
+/* remove parallax effect on mobile */
+@media (max-width: 768px) {
+    .banner {
+        background-attachment: scroll;
+    }
+}
 
 .teaching-text {
     position: absolute;
@@ -124,4 +131,11 @@ span {
 .carousel-control-prev-icon {
     position: relative;
     left: -6rem;
+}
+
+/* hide carousel buttons on mobile */
+@media (max-width: 768px) {
+    .gallery button {
+        display: none;
+    }
 }
