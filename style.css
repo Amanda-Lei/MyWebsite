@@ -84,7 +84,7 @@ span {
 #contacts {
     background-color: #5d5c61 ;
     color: #E39774;
-    padding: 20px;
+    padding: 3rem;
     text-align: center;
 }
 
@@ -100,7 +100,7 @@ span {
     background-color: var(--accent2);
     text-align: center;
     padding: 4rem;
-    color: var(--accent1);
+    color: white;
 }
 
 .carousel-header {

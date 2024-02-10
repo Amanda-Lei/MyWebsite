@@ -17,6 +17,12 @@ imgArray = Array.from(imgNames).map(img => 'images/' + folderName + '/' + img);
 carouselInner = document.querySelector('#ajl-gallery > .carousel-inner');
 createCarousel(imgArray, carouselInner);
 
+var imgNames = ['Screen Shot 2024-01-06 at 2.05.40 PM.png','gallery.png','Screen Shot 2024-01-04 at 12.52.44 PM.png','Screen Shot 2024-01-04 at 12.48.44 PM.png','Screen Shot 2024-01-04 at 12.49.41 PM.png','Screen Shot 2024-01-04 at 12.53.51 PM.png','Screen Shot 2024-01-04 at 12.50.32 PM.png','Screen Shot 2024-01-04 at 12.52.21 PM.png','Screen Shot 2024-01-06 at 2.04.54 PM.png','Screen Shot 2024-01-04 at 1.58.42 PM.png','Screen Shot 2024-01-04 at 12.50.50 PM.png','Screen Shot 2024-01-06 at 2.04.10 PM.png'];
+var folderName = 'techsharePosts';
+var imgArray = Array.from(imgNames).map(img => 'images/' + folderName + '/' + img);
+var carouselInner = document.querySelector('#personal-gallery > .carousel-inner');
+createCarousel(imgArray, carouselInner);
+
 /* FUNCTIONS */
 
 // //return array of all pngs in folder arg
